@@ -8,16 +8,16 @@ TelloのSDKを使いPythonコードでドローンを動かします。
 SDKの詳細は以下からダウンロードしてください。  
  
 ## SDK
-日本語（Selina翻訳）. 
+日本語（Selina翻訳）.  
 https://drive.google.com/file/d/1A51f-5HK5fq4YfiIR4Anun4DD8ERRtR3/view?usp=sharing
 
 
 ### 本家SDKのダウンロード先
-＜SDK1.3＞. 
+＜SDK1.3＞.  
 https://www.ryzerobotics.com/jp/tello/downloads. 
-＜SDK2.0＞. 
+＜SDK2.0＞.  
  https://www.ryzerobotics.com/jp/tello-edu/downloads. 
  
  ## BLOG
- やり方ブログ. 
+ やり方ブログ.  
  https://se-lina.hatenablog.com/entry/2020/08/16/110723
