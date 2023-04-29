@@ -1,4 +1,13 @@
 # drone_tello
+ここでは、小型ドローンTelloを使用した動作プログラミングをまとめ
+OpenCVライブラリを使用した、画像の処理を行うプログラミングをまとめます。
+- 基本的なTelloの操作、起動方法
+- Telloから画像・動画を取得する方法- 
+- その画像から物体を検出する方法
+- それらの準備（pip installなど）
+- ChatGPTを活用した例など
+
+
 小型ドローンTelloの動作プログラミングをここにまとめます。  
 各自のパソコンでここに記載のPythonコードでドローンを動かすことが出来ます。  
 通信方式はＵＤＰ（パソコンとＴｅｌｌｏをＷｉｆｉでつなぐ）です。  
@@ -21,3 +30,4 @@ https://www.ryzerobotics.com/jp/tello/downloads.
  ## BLOG
  やり方ブログ.  
  https://se-lina.hatenablog.com/entry/2020/08/16/110723
+ 
