@@ -57,12 +57,21 @@ https://github.com/se-lina/drone_tello/blob/main/tello_demo2.py
 #### Telloから動画、静止画を取得するコード
 ▼事前準備が必要です。  
 https://github.com/se-lina/drone_tello/blob/main/tello_photo_movie_save.py  
-(yasuta 作成サポート)
+(yasuta 作成サポート)  
+作成したプログラムには以下の機能があります。  
+・プログラムの実行から終了までの動画をmp4形式で保存  
+・キー入力で操作(離陸・着陸・前進・上昇等、お好みで増やせる)  
+・Pキーを押すと写真を撮影し、jpgで保存  
+・PC上にTelloのカメラ映像を表示(バッテリー残量・高度等の情報も表示)  
 
 #### 静止画から顔を検出するコード
 ▼事前準備が必要です。  
-https://github.com/se-lina/drone_tello/blob/main/open_cv_face.py
+https://github.com/se-lina/drone_tello/blob/main/open_cv_face.py  
+実行し、画像にある顔が検出されると四角で囲います。  
+ループに入ってしまったとき 'q' キーでプログラムを終了できます。
 
 #### 動画から顔を検出するコード
 ▼事前準備が必要です。  
-https://github.com/se-lina/drone_tello/blob/main/open_cv_face_douga.py
+https://github.com/se-lina/drone_tello/blob/main/open_cv_face_douga.py  
+実行し、動画にある顔が検出されると四角で囲います。  
+ループに入ってしまったとき 'q' キーでプログラムを終了できます。
