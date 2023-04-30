@@ -9,6 +9,13 @@ OpenCVライブラリを使用した、画像の処理を行うプログラミ�
 - それらの準備（pip installなど）
 - ChatGPTを活用した例など
 
+## 関連リンク
+#### コードの詳細説明
+https://github.com/se-lina/drone_tello/blob/main/details_description.md
+#### 講義で必要なインストールモジュール
+https://github.com/se-lina/drone_tello/blob/main/install_module.md
+
+
 ## 基本的なTelloの操作、起動方法
 小型ドローンTelloの動作プログラミングをここにまとめます。  
 各自のパソコンでここに記載のPythonコードでドローンを動かすことが出来ます。  
