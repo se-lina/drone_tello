@@ -9,13 +9,6 @@ OpenCVライブラリを使用した、画像の処理を行うプログラミ�
 - それらの準備（pip installなど）
 - ChatGPTを活用した例など
 
-## 関連リンク
-#### コードの詳細説明
-https://github.com/se-lina/drone_tello/blob/main/details_description.md
-#### 講義で必要なインストールモジュール
-https://github.com/se-lina/drone_tello/blob/main/install_module.md
-
-
 ## 基本的なTelloの操作、起動方法
 小型ドローンTelloの動作プログラミングをここにまとめます。  
 各自のパソコンでここに記載のPythonコードでドローンを動かすことが出来ます。  
@@ -36,7 +29,28 @@ https://www.ryzerobotics.com/jp/tello/downloads
 ＜SDK2.0＞  
  https://www.ryzerobotics.com/jp/tello-edu/downloads. 
  
- #### BLOG
- やり方ブログ    
- https://se-lina.hatenablog.com/entry/2020/08/16/110723
+#### BLOG
+やり方ブログ    
+https://se-lina.hatenablog.com/entry/2020/08/16/110723
  
+ 
+## 関連リンク
+#### コードの詳細説明
+https://github.com/se-lina/drone_tello/blob/main/details_description.md
+#### 講義で必要なインストールモジュール
+https://github.com/se-lina/drone_tello/blob/main/install_module.md
+
+
+## Pythonプログラムコード例
+#### Telloを動かすコード
+https://github.com/se-lina/drone_tello/blob/main/tello_demo.py
+https://github.com/se-lina/drone_tello/blob/main/tello_demo2.py
+
+#### Telloから動画、静止画を取得するコード
+https://github.com/se-lina/drone_tello/blob/main/tello_photo_movie_test3.py
+
+#### 静止画から顔を検出するコード
+https://github.com/se-lina/drone_tello/blob/main/open_cv_face.py
+
+#### 動画から顔を検出するコード
+https://github.com/se-lina/drone_tello/blob/main/open_cv_face_douga.py
