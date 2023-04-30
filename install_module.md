@@ -29,6 +29,13 @@ pip install opencv-contrib-python
 と入力し、Enterキーを押します。
 
 
+## 顔検出のためのカスケード分類器
+https://github.com/opencv/opencv/tree/master/data/haarcascades  
+ここから、顔検出に必要なxmlをダウンロードしてください。  
+今回の講義で必要なファイルは  
+`haarcascade_frontalface_default.xml` 
+です。
+
 ## DJI Tello ライブラリ
 
 Telloを制御するためには、以下の手順が必要です。   
