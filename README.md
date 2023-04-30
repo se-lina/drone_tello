@@ -3,10 +3,10 @@
 ## 概要
 ここでは、小型ドローンTelloを使用した動作プログラミングをまとめ  
 OpenCVライブラリを使用した、画像の処理を行うプログラミングをまとめます。
-- 基本的なTelloの操作、起動方法
-- Telloから画像・動画を取得する方法
-- その画像から物体を検出する方法
-- それらの準備（pip installなど）
+- 基本的なTelloの操作、起動方法 (4/17)
+- Telloから画像・動画を取得する方法 (5/1)
+- その画像から物体を検出する方法 (5/1)
+- それらの準備（pip installなど） (5/1)
 - ChatGPTを活用した例など
 
 ## 基本的なTelloの操作、起動方法
@@ -43,7 +43,7 @@ https://github.com/se-lina/drone_tello/blob/main/install_module.md
 
 ## Pythonプログラムコード例
 #### Telloを動かすコード
-https://github.com/se-lina/drone_tello/blob/main/tello_demo.py
+https://github.com/se-lina/drone_tello/blob/main/tello_demo.py  
 https://github.com/se-lina/drone_tello/blob/main/tello_demo2.py
 
 #### Telloから動画、静止画を取得するコード
