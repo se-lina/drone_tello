@@ -34,7 +34,18 @@ https://github.com/opencv/opencv/tree/master/data/haarcascades
 ここから、顔検出に必要なxmlをダウンロードしてください。  
 今回の講義で必要なファイルは  
 `haarcascade_frontalface_default.xml` 
-です。
+です。  
+
+#### OpenCVで使う代表的なカスケード分類器のXMLファイルとその説明まとめ。   
+`haarcascade_frontalface_default.xml`：正面向きの顔を検出するための分類器。比較的高速で、一般的な顔検出用途に適しています。  
+`haarcascade_eye.xml`：目を検出するための分類器。顔を検出したあとに使用します。  
+`haarcascade_smile.xml`：笑顔を検出するための分類器。顔を検出したあとに使用します。  
+`haarcascade_fullbody.xml`：人の全身を検出するための分類器。背景が比較的単色である必要があります。  
+`haarcascade_upperbody.xml`：人の上半身を検出するための分類器。背景が比較的単色である必要があります。  
+`haarcascade_lowerbody.xml`：人の下半身を検出するための分類器。背景が比較的単色である必要があります。  
+`haarcascade_frontalcatface.xml`：正面向きの猫の顔を検出するための分類器。猫の顔を検出するために使用します。   
+
+これら以外にも、OpenCVには多数のカスケード分類器が用意されており、用途に応じて適切なものを選択する必要があります。また、カスケード分類器は自分で学習することもできますが、その場合は大量の正解画像と不正解画像が必要になります。
 
 ## DJI Tello ライブラリ
 
