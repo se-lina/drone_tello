@@ -96,7 +96,7 @@ https://github.com/se-lina/drone_tello/blob/main/open_cv_face_douga.py
 
 #### Open CVとTelloの動作プログラムを合わせたプログラム
 https://github.com/se-lina/drone_tello/blob/main/open_cv_face_douga.py  
-※プログラム実行中はキーボードの操作や動かす量の指示が筆お湯菜プログラムです。
+※プログラム実行中はキーボードの操作や動かす量の指示が必要なプログラムです。
 
 #### リアルタイム顔検出
 基礎編ではファイルを読み込んで顔検出をしたが、
