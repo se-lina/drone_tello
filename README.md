@@ -106,7 +106,7 @@ https://github.com/se-lina/drone_tello/blob/main/open_cv_face_douga.py
 https://github.com/se-lina/drone_tello/blob/main/real_time_face.py
 
 ▼PCのインカメラ（もしくはUSBカメラ）を利用して顔検出を行う（顔検出＋笑顔判定）  
-https://github.com/se-lina/drone_tello/blob/main/real_time_face.py
+https://github.com/se-lina/drone_tello/blob/main/real_time_face_smile.py
 
 #### リアルタイム顔検出（Telloのカメラに接続）
 ここでは、Telloのカメラに接続し、リアルタイムのオブジェクト検出を行います。
