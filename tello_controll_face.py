@@ -1,5 +1,6 @@
 # Produced by Yasuta
 # Drone Telloのカメラをストリーミングしながら、都度動作をするプログラミング
+# それに加え、リアルタイム顔認証を追加
 # 本プログラムを実行する場合は準備が必要です。GitHub内の情報を確認してください
 
 import time
@@ -179,10 +180,12 @@ class TelloController:
 
     def displayTelloStatus(self):
         # 説明画像の表示
-        # 画像のパスを見るときに注意
-        sheet = cv2.imread('/Users/lina/Desktop/keio_pg_test/instruct.jpg', cv2.IMREAD_UNCHANGED)
+        sheet = cv2.imread('instruct.jpg', cv2.IMREAD_UNCHANGED)
         cv2.imshow('cheat sheet', sheet)
         cv2.moveWindow('cheat sheet', 500, 0)
+
+        # 顔検出モデルの読み込み
+        face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 
         while self.recording:
             # 画面上部に表示する情報の設定
@@ -190,8 +193,20 @@ class TelloController:
             flight_time = self.tello.get_flight_time()
             height = self.tello.get_height()
             display_text = f'Battery: {battery}%  Flight Time: {flight_time}s  Height: {height}cm'
-            cv2.putText(self.frame_read.frame, display_text, (10, 20), cv2.FONT_HERSHEY_SIMPLEX, 1.0, 
+            cv2.putText(self.frame_read.frame, display_text, (10, 20), cv2.FONT_HERSHEY_SIMPLEX, 0.5, 
                         (0, 255, 0), 1, cv2.LINE_AA)
+            
+            # グレースケールに変換  
+            gray = cv2.cvtColor(self.frame_read.frame, cv2.COLOR_BGR2GRAY)  
+  
+            # 顔検出を実行  
+            faces = face_cascade.detectMultiScale(gray, scaleFactor=1.3, minNeighbors=5)  
+  
+            # 検出された顔に矩形を描画  
+            for (x, y, w, h) in faces:  
+                cv2.rectangle(self.frame_read.frame, (x, y), (x+w, y+h), (0, 255, 0), 2)  
+                cv2.putText(self.frame_read.frame, 'face', (x, y-10), cv2.FONT_HERSHEY_SIMPLEX, 
+                            0.9, (0, 255, 0), 2)  
 
             # 映像の表示
             cv2.imshow('Tello camera', self.frame_read.frame)
