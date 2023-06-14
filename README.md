@@ -121,6 +121,10 @@ https://github.com/se-lina/drone_tello/blob/main/tello_controll_face.py
 操作方法一覧は以下の画像でも確認出来ます。  
 https://github.com/se-lina/drone_tello/blob/main/instruct.jpg
 
+#### Telloをリアルタイムカメラを起動させつつ、プログラム通りに飛行させるコード
+https://github.com/se-lina/drone_tello/blob/main/tello_controll_realtime_movie.py
+2023/6/15追加
+
 ## まとめ
 今回の講義について、基礎編、応用編を記載しました。  
 上記のプログラムを組み合わせする事により、より実用性のあるプログラムになると思います。  
